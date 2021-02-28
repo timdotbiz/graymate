@@ -2,7 +2,10 @@
   "name": "gray-matter-editor",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "bin": {
+    "grayme": "./bin/grayme"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
