@@ -1,10 +1,10 @@
 {
-  "name": "gray-matter-editor",
+  "name": "graymate",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "bin": {
-    "grayme": "./bin/grayme"
+    "graymate": "./bin/graymate"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
