@@ -1,2 +1,10 @@
 node_modules
+
+# Ignore tarballs for local publishing
 *.tgz
+
+# Ignore built ts files
+dist/**/*
+
+# Ignore graymate.yaml files built during tests
+graymate.yaml
