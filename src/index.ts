@@ -1,9 +1,20 @@
 import init from './init';
 
-export default () => {
+const main = () => {
+  console.log('** GRAYMATE **');
   const argument = process.argv[2];
 
-  if (!argument || argument === 'init') {
-    init();
+  try {
+    if (!argument || argument === 'init') {
+      init();
+    } else {
+      throw new Error('Unrecognized command. Closing GRAYMATE')
+    }
+  } catch(e) {
+    console.error(e);
   }
 }
+
+main();
+
+export default main;

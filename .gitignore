@@ -6,5 +6,5 @@ node_modules
 # Ignore built ts files
 dist/**/*
 
-# Ignore graymate.yaml files built during tests
-graymate.yaml
+# Ignore graymate.json files built during tests
+graymate.json

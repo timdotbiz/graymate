@@ -4,9 +4,20 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var init_1 = __importDefault(require("./init"));
-exports.default = (function () {
+var main = function () {
+    console.log('** GRAYMATE **');
     var argument = process.argv[2];
-    if (!argument || argument === 'init') {
-        init_1.default();
+    try {
+        if (!argument || argument === 'init') {
+            init_1.default();
+        }
+        else {
+            throw new Error('Unrecognized command. Closing GRAYMATE');
+        }
     }
-});
+    catch (e) {
+        console.error(e);
+    }
+};
+main();
+exports.default = main;

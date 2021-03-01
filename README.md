@@ -16,4 +16,4 @@ To get started run:
 graymate init
 ```
 
-This will create a `graymate.yaml` file in your project's root directory.
+This will create a `graymate.json` file in your project's root directory.
