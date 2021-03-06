@@ -5,9 +5,8 @@ import fs from 'fs';
 jest.mock('fs');
 
 test('init writes a new `graymate.json` file to the project root', () => {
-  init();
   const spy = jest.spyOn(fs, 'writeFile');
-
+  init();
   expect(spy).toHaveBeenCalled();
 
   const appDir = path.resolve('./');
