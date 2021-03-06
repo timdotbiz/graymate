@@ -5,6 +5,8 @@ import init from '../src/init';
 
 describe('graymate cli', () => {
   test('\'graymate\' with no argument starts the initializer', () => {
+    expect(init).not.toHaveBeenCalled();
+
     commandProcessor('');
 
     expect(init).toHaveBeenCalled();
@@ -12,6 +14,8 @@ describe('graymate cli', () => {
   })
 
   test('\'graymate init\' starts the initializer', () => {
+    expect(init).not.toHaveBeenCalled();
+
     commandProcessor('init');
 
     expect(init).toHaveBeenCalled();

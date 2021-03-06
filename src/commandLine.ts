@@ -16,13 +16,3 @@ export const commandProcessor = (argument: String): void => {
     console.error(e);
   }
 }
-
-const commandLineHandler = (): void => {
-  const argument = process.argv[2] || '';
-
-  commandProcessor(argument);
-}
-
-commandLineHandler();
-
-export default commandLineHandler;
