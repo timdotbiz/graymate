@@ -9,7 +9,7 @@ export const errorHandler = (err: Error | null) => {
   };
 };
 
-const init = () => {
+const init = (): void => {
   const configFileName = 'graymate.json';
   console.log(`Initializing project ${configFileName}`);
 

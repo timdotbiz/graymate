@@ -7,7 +7,8 @@ describe('graymate cli', () => {
   test('\'graymate\' with no argument starts the initializer', () => {
     expect(init).not.toHaveBeenCalled();
 
-    commandProcessor('');
+    const command = commandProcessor('');
+    command();
 
     expect(init).toHaveBeenCalled();
     expect(init).toHaveBeenCalledTimes(1);
@@ -16,7 +17,8 @@ describe('graymate cli', () => {
   test('\'graymate init\' starts the initializer', () => {
     expect(init).not.toHaveBeenCalled();
 
-    commandProcessor('init');
+    const command = commandProcessor('init');
+    command();
 
     expect(init).toHaveBeenCalled();
     expect(init).toHaveBeenCalledTimes(1);
